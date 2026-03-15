@@ -59,8 +59,8 @@ client
 │   ├─ fragment-masking.ts
 │   ├─ gql.ts
 │   ├─ graphql.ts           # auto-generated GraphQL code
-│   └─ index 
-│               
+│   └─ index
+│
 │
 ├─ lib
 │   └─ ApolloClient.ts
@@ -75,7 +75,13 @@ client
 
 ## Installation
 
-Clone the repository:
+Clone the backend repository first:
+
+```bash
+git clone git@github.com:Pritam-25/graphql_express_setup.git
+```
+
+Then clone the client repository:
 
 ```bash
 git clone git@github.com:Pritam-25/graphql_next.js_setup.git
@@ -85,6 +91,12 @@ Install dependencies:
 
 ```bash
 pnpm install
+```
+
+Run the backend server first (inside the backend project):
+
+```bash
+pnpm dev
 ```
 
 ---
@@ -122,9 +134,10 @@ pnpm codegen
 
 Recommended flow:
 
-1. Start backend GraphQL server first.
-2. Run `pnpm codegen` in this client project.
-3. Start the Next.js app.
+1. Clone backend repo: `git@github.com:Pritam-25/graphql_express_setup.git`.
+2. Run backend server with `pnpm dev`.
+3. Run `pnpm codegen` in this client project.
+4. Start the Next.js app.
 
 ---
 
